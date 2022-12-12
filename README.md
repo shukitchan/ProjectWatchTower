@@ -61,3 +61,5 @@ dest_ip=* ssl_cert_name=/work/<domain name>.crt ssl_key_name=/work/<domain name>
 0 4 * * * /bin/cp -R -u /work/bwdata/ /dest/My\ Drive/bw/
 ```
 
+## To-Do
+* Add support for wallabag - self-hosted bookmark manager
