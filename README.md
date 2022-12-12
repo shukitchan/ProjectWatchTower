@@ -19,7 +19,7 @@ Mac, Google Drive, Tailscale, Docker Desktop, Amphetamine App, ATS, Crond, stand
 ## ATS
 * Use ats-alpine container
 * expose container port 8443 to port 443
-* setup /work to /Users/<user>/Library/Containers/io.tailsacle.ipn/macos/Data
+* setup /work to /Users/<user name>/Library/Containers/io.tailsacle.ipn/macos/Data
 * records.config - export port 8443 as SSL server port
 * allow DELETE in ip_allow.yaml
 * remap.config
