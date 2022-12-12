@@ -1,3 +1,5 @@
+# Project WatchTower
+
 ## Pre-req
 
 Mac, Google Drive, Tailscale, Docker Desktop, Amphetamine App, ATS, Crond, standardnotes, bitwarden
@@ -7,6 +9,7 @@ Mac, Google Drive, Tailscale, Docker Desktop, Amphetamine App, ATS, Crond, stand
 * setup /bw/ for bitwarden backup files
 
 ## Tailscale
+* Generate SSL cert for the domain
 ```
 /Applications/Tailscale.app/Contents/MacOS/Tailscale cert <domain name>
 ```
@@ -19,7 +22,7 @@ Mac, Google Drive, Tailscale, Docker Desktop, Amphetamine App, ATS, Crond, stand
 ## ATS
 * Use ats-alpine container
 * expose container port 8443 to port 443
-* setup /work to /Users/<user name>/Library/Containers/io.tailsacle.ipn/macos/Data
+* setup /work to ~/Library/Containers/io.tailsacle.ipn/macos/Data
 * records.config - export port 8443 as SSL server port
 * allow DELETE in ip_allow.yaml
 * remap.config
@@ -41,8 +44,8 @@ dest_ip=* ssl_cert_name=/work/<domain name>.crt ssl_key_name=/work/<domain name>
 
 ## bitwarden
 * https://bitwarden.com/help/install-on-premise-linux
-  * domain name
-  * not using let's encrypt, not SSL cert to use, do not generate self-signed SSL cert
+  * provide a domain name
+  * not using let's encrypt, not having a SSL cert to use, do not generate self-signed SSL cert
   * need installation key and id
   * Change config.yml in bwdata to use 30080/30443 for ports
 * Self host repo - https://github.com/shukitchan/self-host
