@@ -2,14 +2,10 @@
 
 ## Pre-req
 
-Mac, Google Drive, Tailscale, Docker Desktop, Amphetamine App, ATS, Crond, standardnotes, bitwarden
-
-## Google Drive
-* setup /sn/ for standardnotes backup files
-* setup /bw/ for bitwarden backup files
+a working Mac machine, Tailscale, Docker Desktop, Amphetamine App, ATS, standardnotes, bitwarden
 
 ## Tailscale
-* Generate SSL cert for the domain
+* Generate SSL cert for the domain name. Domain name is the full domain that can be retrieved from tailscale web UI
 ```
 /Applications/Tailscale.app/Contents/MacOS/Tailscale cert <domain name>
 ```
@@ -49,17 +45,7 @@ dest_ip=* ssl_cert_name=/work/<domain name>.crt ssl_key_name=/work/<domain name>
   * need installation key and id
   * Change config.yml in bwdata to use 30080/30443 for ports
 * Self host repo - https://github.com/shukitchan/self-host
-* Using backup for data restore - https://bitwarden.com/help/backup-on-premise
-
-## Crond 
-* use crond on alpine
-* Setup /work for user directory
-* Setup /dest for Google Drive
-* Edit /var/spool/cron/crontabs/root
-```
-0 3 * * * /bin/cp -R -u /work/Standard\ Notes\ Backups/ /dest/My\ Drive/sn/
-0 4 * * * /bin/cp -R -u /work/bwdata/ /dest/My\ Drive/bw/
-```
+* Can consider using backup for data restore - https://bitwarden.com/help/backup-on-premise
 
 ## To-Do
 * Add support for wallabag - self-hosted bookmark manager
