@@ -1,5 +1,9 @@
 # Project WatchTower
 
+Self Hosting useful applications for your home
+Standard Notes: Note Taking application
+Bitwarden: Password Management application
+
 ## Pre-req
 
 a working Mac machine, Tailscale, Docker Desktop, Amphetamine App, ATS, standardnotes, bitwarden
@@ -47,5 +51,3 @@ dest_ip=* ssl_cert_name=/work/<domain name>.crt ssl_key_name=/work/<domain name>
 * Self host repo - https://github.com/shukitchan/self-host
 * Can consider using backup for data restore - https://bitwarden.com/help/backup-on-premise
 
-## To-Do
-* Add support for wallabag - self-hosted bookmark manager
