@@ -59,4 +59,6 @@ dest_ip=* ssl_cert_name=/work/<domain name>.crt ssl_key_name=/work/<domain name>
   * Change config.yml in bwdata to use 30080/30443 for ports
 * Self host repo - https://github.com/shukitchan/self-host
 * Can consider using backup for data restore - https://bitwarden.com/help/backup-on-premise
+* Upgrade instructions - https://bitwarden.com/help/updating-on-premise/
+* Recommend to export vault before the upgrade
 
